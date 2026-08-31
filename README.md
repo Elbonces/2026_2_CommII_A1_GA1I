@@ -1,4 +1,4 @@
-# Comunicaciones II - Grupo A1-GA1I
+# Comunicaciones II - Grupo A1-GI
 
 Bienvenido al repositorio del Laboratorio de Comunicaciones II (27145).
 
