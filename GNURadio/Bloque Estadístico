@@ -1,4 +1,4 @@
-##Bloque sin ruido
+## Bloque sin ruido
 import numpy as np
 from gnuradio import gr
 
