@@ -6,7 +6,7 @@ Bienvenido al repositorio del Laboratorio de Comunicaciones II (27145).
 
 * Juan Sebastian Bonces - 2220387.
 * Santiago Benitez Torres - 2212752.
-*  - .
+*  Oscar German Hernandez - 2212260
 
 ---
 
