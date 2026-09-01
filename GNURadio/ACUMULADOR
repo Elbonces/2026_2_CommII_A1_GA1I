@@ -1,0 +1,23 @@
+import numpy as np
+from gnuradio import gr
+
+class blk(gr.sync_block):
+    def __init__(self):
+        gr.sync_block.__init__(
+            self,
+            name='e_Acum',
+            in_sig=[np.float32],
+            out_sig=[np.float32]
+        )
+        self.acc = 0.0  # Mantiene el estado acumulado entre bloques
+
+    def work(self, input_items, output_items):
+        x = input_items[0]
+        y0 = output_items[0]
+        
+        if len(x) > 0:
+            temp = np.cumsum(x) + self.acc
+            y0[:] = temp
+            self.acc = temp[-1]  # Actualiza el estado con el último valor procesado
+            
+        return len(y0)
